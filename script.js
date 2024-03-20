@@ -1,5 +1,9 @@
 function encriptarTexto() {
     var texto = document.getElementById("texto").value.toLowerCase();
+    if (texto === "") {
+        alert("No se encontró ningún mensaje para encriptar.");
+    return;
+    }
     var resultado = "";
 
     resultado = texto
@@ -14,6 +18,10 @@ function encriptarTexto() {
 
 function desencriptarTexto() {
     var texto = document.getElementById("texto").value.toLowerCase();
+    if (texto === "") {
+        alert("No se encontró ningún mensaje para desencriptar.");
+        return;
+    }
     var resultado = "";
 
     resultado = texto
