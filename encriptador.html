@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+         <div class="container">
+             <h1><img src="imagenes/Logo.png" alt="Logo Bootcamp"></h1>
+        
+                 <div class="input-section">
+                    <label for="texto"></label>
+                     <textarea id="texto" rows="30" cols="50" required placeholder= "Ingrese el texto aquí"></textarea>
+        
+                     <p class="instruccion"><img src="imagenes/Frame 1 (1).png"></p>
+
+                    <button onclick="encriptarTexto()">Encriptar</button>
+                    <button onclick="desencriptarTexto()">Desencriptar</button>
+
+                  </div>
+
+                <div class="output-section">
+                    <div><img class="mono" src="imagenes/Muñeco.png" alt=""></div>
+                    <div><img class="fondo" src="imagenes/Rectangle 1 (1).png"></div>
+                    <div id="resultado"></div>
+                
+                </div>
+             </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        Desarrollado por: Eduardo Hernández<br>
+        Correo electrónico: 23ceha@gmail.com<br>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

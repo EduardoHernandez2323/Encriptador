@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .container img {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .container img:last-child {
+            margin-right: 0;
+        }
+    </style>
 </head>
 <body>
-    <main>
-         <div class="container">
-             <h1><img src="imagenes/Logo.png" alt="Logo Bootcamp"></h1>
-        
-             <div class="input-section">
-              <label for="texto"></label>
-              <textarea id="texto" rows="30" cols="50" required placeholder= "Ingrese el texto aquí"></textarea>
-        
-              <p class="instruccion"><img src="imagenes/Frame 1 (1).png"></p>
+    <div class="container">
+        <a href="pagina_encriptador.html"><img src="imagen_encriptador.jpg" alt="Imagen Encriptador"></a>
+        <img src="imagen_error.jpg" alt="Imagen Error" onclick="mostrarMensaje()">
+    </div>
 
-              <button onclick="encriptarTexto()">Encriptar</button>
-              <button onclick="desencriptarTexto()">Desencriptar</button>
-
-            </div>
-
-              <div class="output-section">
-                <div><img src="imagenes/Muñeco.png" alt=""></div>
-                <div id="resultado"></div>
-                
-            </div>
-             </div>
-    </main>
-    <!-- Pie de página -->
-    <footer>
-        Desarrollado por: Eduardo Hernández<br>
-        Correo electrónico: 23ceha@gmail.com<br>
-    </footer>
-    
-    <script src="script.js"></script>
+    <script>
+        function mostrarMensaje() {
+            alert("No se encontró ningún mensaje.");
+        }
+    </script>
 </body>
 </html>
