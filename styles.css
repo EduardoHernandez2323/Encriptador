@@ -1,14 +1,13 @@
 body {
     font-family: Arial, sans-serif;
+    background: #F3F5FC;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
 }
 
 label {
@@ -16,8 +15,18 @@ label {
     margin-bottom: 5px;
 }
 
+.input-section {
+    grid-column: 1 / span 1;
+    
+}
+
+.output-section {
+    grid-column: 2 / span 1;
+}
+
 textarea {
     width: 100%;
+    resize: vertical;
     margin-bottom: 10px;
 }
 
@@ -28,8 +37,19 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.instruction {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
 }
