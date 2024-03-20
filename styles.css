@@ -15,6 +15,10 @@ label {
     margin-bottom: 5px;
 }
 
+p{
+    text-align: center;
+}
+
 .input-section {
     grid-column: 1 / span 1;
     
@@ -22,6 +26,7 @@ label {
 
 .output-section {
     grid-column: 2 / span 1;
+    text-align: center;
 }
 
 textarea {
@@ -47,6 +52,10 @@ button:hover {
 .instruction {
     font-size: 0.8em;
     margin-top: 5px;
+}
+
+#resultado{
+    margin: 20 20 20 20;
 }
 
 footer {
